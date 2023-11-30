@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@color/LightPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Phone">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ribbonMain"
+        android:name="com.example.terlizziprojectitdev181.IconRibbon"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:background="@color/Primary"
+        tools:layout="@layout/fragment_icon_ribbon" />
+
+
+    <TextView
+        android:id="@+id/tvPhonePg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:text="PHONE PAGE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCallEC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:text="Call My Emergency Contact"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnCallContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:text="Go To Contacts"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnCallAAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:text="Call AAA"
+        android:textColor="@color/white"
+
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/GoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:text="Go To Google Maps"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/tvSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Log2">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ribbonMain"
+        android:name="com.example.terlizziprojectitdev181.IconRibbon"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:background="@color/Primary"
+        tools:layout="@layout/fragment_icon_ribbon" />
+
+    <TextView
+        android:id="@+id/tvLog2Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="9"
+        android:gravity="center_horizontal"
+        android:text="MAINTENANCE LOG"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvSelectMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="Select Mileage Check"
+        android:textColor="@color/Accent"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv30"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2.5dp"
+            android:background="@color/LightPrimary"
+            android:clickable="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="3dp"
+            android:text="30,000"
+            android:layout_weight="1"
+            android:textAlignment="gravity"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv60"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="@color/LightPrimary"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+
+            android:paddingTop="20dp"
+            android:text="60,000"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv75"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@color/LightPrimary"
+            android:gravity="center"
+            android:padding="3dp"
+            android:paddingTop="20dp"
+            android:text="75,000"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv90"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="@color/LightPrimary"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="90,000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv100"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/LightPrimary"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="100,000+"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLogTextSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lvLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="60"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvlogSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnEnterLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Enter Log Data"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
+

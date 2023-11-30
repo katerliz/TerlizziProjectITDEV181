@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    tools:context=".BottomNav">
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imgClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/imgLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/maint_log" />
+</LinearLayout>

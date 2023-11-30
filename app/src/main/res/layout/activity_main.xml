@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ribbonMain"
+        android:name="com.example.terlizziprojectitdev181.IconRibbon"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/Primary"
+        tools:layout="@layout/fragment_icon_ribbon" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detailMain"
+        android:name="com.example.terlizziprojectitdev181.DetailFrag"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginBottom="0dp"
+
+        android:background="@color/LightPrimary"
+        tools:layout="@layout/fragment_detail" />
+
+
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+</LinearLayout>
